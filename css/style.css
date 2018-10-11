@@ -1,0 +1,366 @@
+/* ================================= */
+/* Base Styles ===================== */
+/* ================================= */
+
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #3a3a3a;
+}
+
+p {
+    font-size: .95em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2, 
+h3 {
+    margin-top: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrap {
+    background: #f5f5f5;
+}
+
+.contact-link {
+    font-weight: 700;
+}
+
+/* ================================= */
+/* Layout Styles =================== */
+/* ================================= */
+
+/* Nav Bar ========================= */
+
+.main-header {
+    background: #f5f5f5;
+    margin-bottom: 30px;
+}
+
+.nav-bar {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+}
+
+.my-name {
+    font-size: 1.5em;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+.my-name a {
+    color: #3a3a3a;
+}
+
+.main-nav li,
+.footer-nav-right li {
+    text-align: center;
+    background: #fff;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.main-nav a,
+.footer-nav-right a,
+.footer-to-top a {
+    font-size: .95em;
+    font-weight: 700;
+    color: #3a3a3a;
+    text-transform: uppercase;
+}
+
+.my-name a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 8px 15px;
+}
+
+/* Nav Content ===================== */
+
+.nav-content {
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    display: block;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-summary {
+    text-align: center;
+}
+
+/* Portfolio ======================= */
+
+.projects-container h2 {
+    text-align: center;
+}
+
+.projects-container {
+    background: #fff;
+    width: 100%;
+}
+
+.project-card {
+    margin-top: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 320px;
+}
+
+.project-text { 
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.project-text h3 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.project-text p {
+    font-size: .85em;
+}
+
+/* Footer ========================== */
+
+.main-footer {
+    padding-left: 1em;
+    padding-right: 1em;
+    background: #f5f5f5;
+}
+
+.footer-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    width: 100%;
+    border-top: 1px solid #747474;
+    display: inline-block;
+}
+
+.footer-nav-name {
+    float: left;
+    font-size: 1em;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+.footer-nav-name a {
+    color: #3a3a3a;
+}
+
+.footer-to-top {
+    float: right;
+}
+
+.footer-nav-right {
+    display: none;
+}
+
+/* ================================= */
+/* Media Queries =================== */
+/* ================================= */
+
+/* 768 Breakpoint ================== */
+
+@media (min-width: 769px) {
+
+    /* Nav Bar Tweaks ============== */
+
+    .main-nav li,
+    .footer-nav-right li {
+        background: none;
+    }
+
+	.main-nav,
+	.main-nav li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    /* Nav Content Tweaks ========== */
+
+    .nav-content {
+        width: 90%;
+        max-width: none;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .profile-summary {
+        width: 60%;
+        font-size: 1.2em;
+        padding-right: 1em;
+        float: left;
+        text-align: left;
+    }
+
+    .profile-photo {
+        width: 40%;
+        float: right;
+    }
+
+    /* Portfolio Tweaks ============ */
+    
+    .projects-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .projects-wrapper {
+        margin: 0 auto;
+    }
+
+    .project-card {
+        width: 50%;
+        float: left;
+    }
+
+    .footer-content {
+        width: 70%;
+    }
+
+    /* Footer Tweaks =============== */
+
+    .footer-to-top {
+        display: none;
+    }
+
+    .footer-nav-right li {
+        display: inline-block;
+    }
+
+    .footer-nav-right a {
+        text-align: center;
+        display: block;
+        padding: 8px 15px;
+    }
+
+    .footer-nav-right {
+        display: block;
+        float: right;
+    }
+
+
+}
+
+/* 1024 Breakpoint ================= */
+
+@media (min-width: 1025px) {
+
+    /* Nav Bar Tweaks =============== */
+
+    .main-nav {
+        float: right;
+    }
+
+    .main-nav a,
+    .footer-nav-right a {
+        margin-left: 20px;
+    }
+
+    .nav-bar {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .my-name {
+        display: inline-block;
+        float: left;
+        margin-left: 20px;
+    }
+
+    /* Nav Content Tweaks ========== */
+
+    .nav-content {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .profile-photo {
+        width: 40%;
+    }
+
+    .profile-summary {
+        font-size: 1.4em;
+        width: 60%;
+        float: left;
+        text-align: left;
+    }
+
+    /* Portfolio Tweaks ============ */
+    
+    .projects-container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1150px;
+        clear: both;
+    }
+
+    .project-card {
+        width: 30%;
+    }
+
+    .project-text {
+        width: 90%;
+    }
+
+    /* Footer Tweaks =============== */
+
+    .footer-content {
+        width: 50%;
+        max-width: 524px;
+    }
+}
+
+/* ================================= */
+/* Float Clearfix ================== */
+/* ================================= */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
