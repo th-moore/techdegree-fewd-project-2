@@ -47,7 +47,7 @@ At least TWO of the following additional styling enhancements have been added to
 
 *Exceeds expectations*
 
-[DONE] The <nav> tag is being used for the navigation bar.
+[DONE] The nav tag is being used for the navigation bar.
 
 [DONE] Additional section has been added to the page, such as a skills section, and a working link to the new section has been added to the navigation bar using an ID to link to anchor tag.
 
