@@ -4,7 +4,6 @@
 
 * {
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 body {
@@ -63,8 +62,10 @@ img,
 }
 
 .nav-bar {
-    padding-top: .5em;
+    padding-top: 1em;
     padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
     text-align: center;
 }
 
@@ -115,6 +116,7 @@ img,
     text-align: center;
     max-width: 540px;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .profile-photo,
@@ -129,7 +131,10 @@ img,
 
 .profile-summary,
 .skills-content p {
+    padding-left: 1em;
+    padding-right: 1em;
     text-align: center;
+    font-size: 1.2em;
 }
 
 /* Portfolio ======================= */
@@ -142,28 +147,25 @@ img,
 .projects-container {
     background: #fff;
     width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
 }
 
 .project-card {
     margin-top: 30px;
     padding-left: 1em;
     padding-right: 1em;
-    max-width: 320px;
 }
 
 .project-text { 
+    width: 100%;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .project-text h3 {
-    font-size: 1em;
     font-weight: 600;
-}
-
-.project-text p {
-    font-size: .85em;
 }
 
 /* Skills ========================== */
@@ -177,7 +179,7 @@ img,
 
 .skills ul {
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .skills li {
@@ -270,7 +272,6 @@ img,
     .profile-summary,
     .skills-content p {
         width: 60%;
-        font-size: 1.2em;
         padding-right: 1em;
         float: left;
         text-align: left;
@@ -291,15 +292,26 @@ img,
 
     .projects-wrapper {
         margin: 0 auto;
+		max-width: 1150px;
+		padding: 1em 0;
     }
 
     .project-card {
-        width: 50%;
-        float: left;
+		display: inline-block;
+		width: 48%;
+		padding: 1em;
+        vertical-align: top;
+        max-width: none;
     }
 
     .footer-content {
         width: 70%;
+    }
+
+    /* Skills Tweaks =============== */
+
+    .skills ul {
+        text-align: left;
     }
 
     /* Footer Tweaks =============== */
@@ -347,7 +359,6 @@ img,
     }
 
     .my-name {
-        display: inline-block;
         float: left;
         margin-left: 20px;
     }
@@ -385,11 +396,14 @@ img,
     }
 
     .project-card {
-        width: 30%;
+        width: 33%;
     }
 
-    .project-text {
+    .project-text h3,
+    .project-text p {
         width: 90%;
+        margin: 0 auto;
+        padding-bottom: 10px;
     }
 
     /* Footer Tweaks =============== */
